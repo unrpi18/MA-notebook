@@ -276,3 +276,7 @@ cython_debug/
 #.idea/
 
 *.out
+*.pdf
+*.png
+output/
+*.nii.gz

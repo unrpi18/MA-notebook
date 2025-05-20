@@ -43,14 +43,14 @@ summary = (
     f"FP: {fp_volumes}\n"
     f"FN: {fn_volumes}\n"
     f"Dice: {dice_scores}\n"
-    f"\n\n3-digit mean:"
-    f"\n\nMean FP: {np.mean(fp_volumes):.3f}\n"
-    f"Mean FN: {np.mean(fn_volumes):.3f}\n"
-    f"Mean Dice: {np.mean(dice_scores):.3f}"
-    f"\n\n1-digit mean:"
-    f"\n\nMean FP: {np.mean(fp_volumes):.1f}\n"
-    f"Mean FN: {np.mean(fn_volumes):.1f}\n"
-    f"Mean Dice: {np.mean(dice_scores):.1f}"
+    f"\n\n3-digit mean ± variance:"
+    f"\n\nFP: {np.mean(fp_volumes):.3f} ± {np.std(fp_volumes):.3f}\n"
+    f"FN: {np.mean(fn_volumes):.3f} ± {np.std(fn_volumes):.3f}\n"
+    f"Dice: {np.mean(dice_scores):.3f} ± {np.std(dice_scores):.3f}"
+    f"\n\n1-digit mean ± variance:"
+    f"\n\nFP: {np.mean(fp_volumes):.1f} ± {np.std(fp_volumes):.1f}\n"
+    f"FN: {np.mean(fn_volumes):.1f} ± {np.std(fn_volumes):.1f}\n"
+    f"Dice: {np.mean(dice_scores):.1f} ± {np.std(dice_scores):.1f}"
 )
 output_lines.append(summary)
 
